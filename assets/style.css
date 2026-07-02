@@ -141,8 +141,58 @@ h3 { font-size: 1.1rem; margin: 24px 0 8px; }
 
 .placeholder { background: #fff7e0; padding: 0 3px; border-radius: 3px; }
 
+/* Consent form (printable) */
+.consent-form {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 24px 26px;
+  background: var(--bg);
+  margin: 24px 0;
+}
+.consent-form .field { margin: 18px 0; }
+.consent-form label {
+  display: block;
+  font-weight: 600;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+.consent-form .line {
+  border-bottom: 1px solid var(--ink);
+  min-height: 1.7em;
+}
+.consent-form .row { display: flex; gap: 26px; flex-wrap: wrap; }
+.consent-form .row > div { flex: 1; min-width: 180px; }
+.consent-form .terms-line { margin: 14px 0; font-size: 0.95rem; }
+.consent-form .terms-line strong { color: var(--ink-soft); }
+.consent-form .consent-check {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin: 22px 0 6px;
+  padding: 14px 16px;
+  background: var(--bg-soft);
+  border-radius: var(--radius);
+}
+.consent-form .consent-check .box {
+  flex: 0 0 auto;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--ink-soft);
+  border-radius: 3px;
+  margin-top: 3px;
+}
+.consent-form .office {
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+  border-top: 1px dashed var(--line);
+  margin-top: 22px;
+  padding-top: 14px;
+}
+
 @media (max-width: 560px) {
   .hero { padding: 52px 0; }
   .hero h1 { font-size: 1.7rem; }
   .nav a { margin-left: 12px; }
+  .consent-form .row { gap: 14px; }
 }
